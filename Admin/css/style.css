@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f3f6f3;
+    color: #202a24;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AdminLayout {
+    min-height: 100vh;
+}
+
+.Sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 248px;
+    padding: 28px 18px 20px;
+    background: #183c32;
+    color: #fff;
+}
+
+.Brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.Brand i {
+    color: #9bd5a9;
+}
+
+.SidebarLabel,
+.Eyebrow {
+    margin: 0;
+    color: #789087;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.SidebarLabel {
+    margin: 42px 10px 12px;
+    color: #a7bdb4;
+}
+
+.Sidebar nav {
+    display: grid;
+    gap: 6px;
+}
+
+.NavLink,
+.LogoutLink {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 44px;
+    padding: 0 12px;
+    border-radius: 5px;
+    color: #d3e2da;
+    font-size: 0.92rem;
+    text-decoration: none;
+}
+
+.NavLink i,
+.LogoutLink i {
+    width: 18px;
+    text-align: center;
+}
+
+.NavLink:hover,
+.NavLink.active {
+    background: #2b594b;
+    color: #fff;
+}
+
+.LogoutLink {
+    margin-top: auto;
+    border-top: 1px solid #416458;
+    border-radius: 0;
+    padding-top: 16px;
+    color: #d3e2da;
+}
+
+.MainContent {
+    max-width: 1500px;
+    margin-left: 248px;
+    padding: 34px clamp(22px, 4vw, 58px) 20px;
+}
+
+.PageHeader,
+.AdminProfile,
+.SectionHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PageHeader {
+    margin-bottom: 30px;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+.PageHeader h1 {
+    margin: 7px 0 0;
+    font-size: 1.8rem;
+}
+
+.AdminProfile {
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.ProfileIcon,
+.StatIcon {
+    display: grid;
+    flex: 0 0 auto;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #dceee0;
+    color: #2b7050;
+}
+
+.AdminProfile strong,
+.AdminProfile span {
+    display: block;
+}
+
+.AdminProfile strong {
+    font-size: 0.9rem;
+}
+
+.AdminProfile span {
+    margin-top: 3px;
+    color: #718078;
+    font-size: 0.78rem;
+}
+
+.StatsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 32px;
+}
+
+.StatCard {
+    min-height: 150px;
+    padding: 20px 22px;
+    border: 1px solid #e4e9e4;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.StatIcon {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+}
+
+.StatIcon.blue {
+    background: #e2edf6;
+    color: #3d7096;
+}
+
+.StatIcon.orange {
+    background: #fbeddc;
+    color: #ac6d28;
+}
+
+.StatCard p {
+    margin-bottom: 5px;
+    color: #65736b;
+    font-size: 0.86rem;
+}
+
+.StatCard h2 {
+    margin: 0;
+    font-size: 1.55rem;
+}
+
+.DataSection {
+    margin-bottom: 24px;
+    padding: 22px;
+    border: 1px solid #e4e9e4;
+    border-radius: 6px;
+    background: #fff;
+    scroll-margin-top: 20px;
+}
+
+.SectionHeading {
+    margin-bottom: 18px;
+}
+
+.SectionHeading h2 {
+    margin: 6px 0 0;
+    font-size: 1.12rem;
+}
+
+.SectionHeading a,
+.SectionNote {
+    color: #42785b;
+    font-size: 0.82rem;
+    text-decoration: none;
+}
+
+.SectionHeading a:hover {
+    text-decoration: underline;
+}
+
+.SectionHeading a i {
+    margin-left: 4px;
+}
+
+.TableWrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th,
+td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #edf0ed;
+    font-size: 0.83rem;
+}
+
+th {
+    color: #78847d;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td {
+    color: #536159;
+}
+
+tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.PrimaryCell {
+    color: #26352c;
+    font-weight: 600;
+}
+
+.Status,
+.RoleTag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #e8f4eb;
+    color: #317046;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.Status.Other,
+.RoleTag {
+    background: #eef1ef;
+    color: #5b6860;
+}
+
+.EmptyState {
+    padding: 24px 12px;
+    color: #79857e;
+    text-align: center;
+}
+
+.PageFooter {
+    padding: 0 0 12px;
+    color: #87928b;
+    font-size: 0.76rem;
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .Sidebar {
+        position: static;
+        width: 100%;
+        padding: 16px 18px;
+    }
+
+    .SidebarLabel {
+        display: none;
+    }
+
+    .Sidebar nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+    }
+
+    .NavLink {
+        min-height: 38px;
+        padding: 0 10px;
+        font-size: 0.82rem;
+    }
+
+    .LogoutLink {
+        display: flex;
+        justify-content: flex-end;
+        min-height: 38px;
+        margin-top: 10px;
+        border-top: 0;
+        padding: 0 10px;
+    }
+
+    .MainContent {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .MainContent {
+        padding: 24px 14px 16px;
+    }
+
+    .PageHeader {
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .PageHeader h1 {
+        font-size: 1.5rem;
+    }
+
+    .AdminProfile {
+        gap: 8px;
+    }
+
+    .ProfileIcon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .AdminProfile strong {
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .StatsGrid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 22px;
+    }
+
+    .StatCard {
+        min-height: 0;
+        padding: 15px;
+    }
+
+    .StatIcon {
+        float: right;
+        margin: 0;
+    }
+
+    .DataSection {
+        padding: 16px 12px;
+    }
+
+    .SectionHeading {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .SectionHeading a,
+    .SectionNote {
+        padding-top: 5px;
+        text-align: right;
+    }
+}

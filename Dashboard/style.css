@@ -1,0 +1,247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f1f4f9;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+
+.MainContainer,
+.Ui {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.DashboardHeader,
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.BrandLogo h1 {
+    color: #1a1c2e;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.UserGreeting {
+    text-align: right;
+}
+
+.UserGreeting p {
+    color: #636e72;
+}
+
+
+.StatGrid,
+.Mid {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.StatCard,
+.card {
+    flex: 1;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.StatCard i {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.StatCard:hover,
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.bg-blue { background: #5d5fef; }
+.bg-green { background: #21c45d; }
+.bg-orange { background: #ff782d; }
+.bg-purple { background: #a531ff; }
+
+
+.text-green { color: #21c45d; font-weight: bold; }
+.text-red { color: #ff4757; font-weight: bold; }
+
+
+.bg-soft-green { background: #e0fcf4; color: #21c45d; }
+.bg-soft-orange { background: #fff3e0; color: #ff782d; }
+.bg-soft-blue { background: #e3f2fd; color: #5d5fef; }
+
+
+.BottomGrid,
+.DashboardContent,
+.BottomSection {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+
+.ActivityBox {
+    flex: 3;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.ActivityBox h4 {
+    margin-bottom: 20px;
+    color: #2d3436;
+    font-size: 1.2rem;
+}
+
+.ActivityItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f1f2f6;
+}
+
+.ActivityItem:last-child {
+    border-bottom: none;
+}
+
+.ItemDetails {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.IconCircle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.TransactionName {
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.TransactionMeta {
+    font-size: 0.85rem;
+    color: #b2bec3;
+    margin-top: 3px;
+}
+
+
+.ActionsColumn,
+.ActionColumn,
+.Right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ActionButton,
+.action-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+}
+
+.ActionButton:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+
+.BtnTitle a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.BtnTitle a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.BtnTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.BtnSub {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+
+.PendingNotice {
+    background: #fffdf0;
+    border: 1px solid #fbeeb8;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.PendingTitle {
+    color: #d35400;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.PendingNotice p:not(.PendingTitle) {
+    font-size: 0.9rem;
+    color: #7f6000;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    border-left: 3px solid #ffeaa7;
+}
+
+
+@media (max-width: 900px) {
+    .StatGrid, .BottomGrid {
+        flex-direction: column;
+    }
+    
+    .ActionsColumn {
+        width: 100%;
+    }
+}

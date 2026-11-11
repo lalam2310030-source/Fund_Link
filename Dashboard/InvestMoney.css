@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f3f6fd;
+    color: #333;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.header-left h1 {
+    font-size: 2.2rem;
+    color: #2d3436;
+    font-weight: 700;
+}
+
+.header-left p {
+    color: #636e72;
+    margin-top: 5px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.header-right strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #2d3436;
+}
+
+
+.marketplace-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-card {
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.gradient-card {
+    background: linear-gradient(135deg, #6c5ce7 0%, #4834d4 100%);
+    color: white;
+}
+
+.gradient-card .label {
+    opacity: 0.9;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.gradient-card h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.sub-stat p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.sub-stat strong {
+    font-size: 1.2rem;
+}
+
+
+.filter-card {
+    background: white;
+}
+
+.filter-card h3 {
+    margin-bottom: 20px;
+    color: #2d3436;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #636e72;
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    color: #2d3436;
+}
+
+.btn-filter {
+    width: 100%;
+    background-color: #5844e3;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-filter:hover {
+    background-color: #4a38c5;
+}
+
+
+.note-card {
+    background-color: #fffbf0;
+    border: 1px solid #ffeeba;
+}
+
+.note-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #d68910;
+}
+
+.note-card p {
+    font-size: 0.85rem;
+    color: #7f6000;
+    line-height: 1.4;
+}
+
+
+.listings {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.loan-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s;
+}
+
+.loan-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.user-info {
+    display: flex;
+    gap: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.avatar.purple {
+    background-color: #a29bfe;
+}
+
+.avatar.blue {
+    background-color: #74b9ff;
+}
+
+.user-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge-hot {
+    background-color: #ffeaa7;
+    color: #d35400;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.purpose {
+    font-size: 0.9rem;
+    color: #636e72;
+    max-width: 350px;
+}
+
+.amount-info {
+    text-align: right;
+}
+
+.amount-info h2 {
+    color: #5844e3;
+    font-size: 1.6rem;
+}
+
+.amount-info p {
+    font-size: 0.8rem;
+    color: #b2bec3;
+}
+
+
+.card-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+
+.icon-purple {
+    background-color: #efeaff;
+    color: #6c5ce7;
+}
+
+.icon-blue {
+    background-color: #e3f2fd;
+    color: #0984e3;
+}
+
+.icon-orange {
+    background-color: #fff3e0;
+    color: #e67e22;
+}
+
+.icon-green {
+    background-color: #e8f5e9;
+    color: #00b894;
+}
+
+.stat-box .label {
+    display: block;
+    font-size: 0.75rem;
+    color: #b2bec3;
+    margin-bottom: 2px;
+}
+
+.stat-box strong {
+    font-size: 1rem;
+    color: #2d3436;
+}
+
+
+.card-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-offer {
+    flex: 3;
+    background: linear-gradient(90deg, #6c5ce7 0%, #4834d4 100%);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn-offer:hover {
+    opacity: 0.9;
+}
+
+.btn-view {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #dfe6e9;
+    color: #2d3436;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-view:hover {
+    background-color: #f5f6fa;
+}
+
+
+.load-more-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.btn-load-more {
+    background-color: white;
+    border: 1px solid #dfe6e9;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: #636e72;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+@media (max-width: 900px) {
+    .marketplace-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter-card {
+        grid-column: span 2;
+    }
+
+    .card-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}

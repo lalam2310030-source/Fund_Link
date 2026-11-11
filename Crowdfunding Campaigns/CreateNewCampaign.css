@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fcf9f6;
+    padding: 40px;
+    color: #334155;
+}
+
+.MainWrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dflex {
+    display: flex;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+
+.Top {
+    margin-bottom: 30px;
+}
+
+.sub-text {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.Top h1 {
+    font-size: 28px;
+    color: #0f172a;
+    margin: 5px 0;
+}
+
+.Top p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+.ContentArea {
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.LeftSide {
+    flex: 2;
+ 
+}
+
+.RightSide {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.SectionCard {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    margin-bottom: 25px;
+}
+
+.SectionCard h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.InputGroup {
+    margin-bottom: 20px;
+}
+
+.Row {
+    gap: 20px;
+}
+
+.InputGroup label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.InputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+.icon-purple {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9333ea;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px 15px 14px 40px;
+  
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #334155;
+    outline: none;
+    transition: border 0.3s;
+    background: white;
+}
+
+textarea {
+    padding: 15px;
+    height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #9333ea;
+}
+
+.helper {
+    display: block;
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 6px;
+}
+
+
+.UploadBox {
+    border: 2px dashed #e2e8f0;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+.UploadBox:hover {
+    border-color: #9333ea;
+    background: #faf5ff;
+}
+
+
+.btn-submit {
+    width: 100%;
+    padding: 18px;
+    background: #9333ea;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #7e22ce;
+}
+
+
+
+.SideCard {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.bg-purple-gradient {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+}
+
+.text-white {
+    color: white;
+}
+
+.big-icon {
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+
+.TipsList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.TipsList li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.TipsList li i {
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.TipsList strong {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.TipsList p {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+
+.bg-white {
+    background: white;
+}
+
+.StatHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.StatRow {
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.StatRow:last-child {
+    border-bottom: none;
+}
+
+.StatRow strong {
+    color: #0f172a;
+}
+
+.text-green {
+    color: #10b981 !important;
+}
+
+
+.bg-yellow-soft {
+    background: #fffbeb;
+}
+
+.border-yellow {
+    border: 1px solid #fcd34d;
+}
+
+.icon-orange {
+    color: #d97706;
+}
+
+.text-brown {
+    color: #92400e !important;
+}
+
+.GuideList {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.GuideList li {
+    font-size: 12px;
+    color: #92400e;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 900px) {
+    .ContentArea {
+        flex-direction: column;
+    }
+
+    .LeftSide,
+    .RightSide {
+        width: 100%;
+        flex: none;
+    }
+
+    .Row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

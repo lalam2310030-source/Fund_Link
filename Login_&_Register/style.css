@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex {
+    display: flex;
+}
+
+
+.Ui {
+    width: 90%;
+    max-width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Left {
+    color: white;
+    flex: 1;
+    padding-right: 50px;
+}
+
+.Left h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Left>div>p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.Left ul {
+    list-style: none;
+}
+
+.Left li {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Left ul p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    padding-left: 35px;
+}
+
+
+.Right {
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    color: #1f2937;
+}
+
+.Right h3 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.Right>p {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+
+.Right label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.Right input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.Right input:focus {
+    outline: none;
+    border-color: #a855f7;
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.1);
+}
+
+.Right button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #6366f1, #a855f7);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.3s;
+    margin-top: 10px;
+}
+
+.Right button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.Right p:last-child {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.Right span {
+    color: #6366f1;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.Right span:hover {
+    text-decoration: underline;
+}

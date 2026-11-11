@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fcf9f6;
+    padding: 40px;
+}
+
+.MainWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+/* --- TOP SECTION --- */
+.TopSection {
+    margin-bottom: 40px;
+}
+
+.sub-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.TopHeader h1 {
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 30px;
+}
+
+.TopControls {
+    gap: 30px;
+}
+
+/* Search Box */
+.SearchPart {
+    flex: 1;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #e2e8f0;
+}
+
+.SearchPart i {
+    color: #94a3b8;
+}
+
+.SearchPart input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    color: #475569;
+}
+
+/* Top Right Stats Box */
+.TopRightStats {
+    background: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    gap: 40px;
+}
+
+.StatItem small {
+    display: block;
+    font-size: 10px;
+    color: #94a3b8;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.StatItem h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1e293b;
+}
+
+.text-purple { color: #9333ea !important; }
+
+/* --- MIDDLE SECTION (Cards) --- */
+.MiddleSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.CampaignCard {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.CampaignCard h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.desc {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Progress Bars */
+.ProgressInfo {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.ProgressInfo strong { color: #0f172a; }
+.ProgressInfo span { color: #94a3b8; }
+
+.ProgressBarBase {
+    width: 100%;
+    height: 10px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.ProgressFill {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Colors */
+.bg-blue { background-color: #2563eb; }
+.bg-green { background-color: #10b981; }
+.bg-purple { background-color: #a855f7; }
+.bg-orange { background-color: #ea580c; }
+
+/* Meta Info */
+.MetaInfo {
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #475569;
+}
+
+.MetaInfo i {
+    margin-right: 6px;
+}
+
+/* Buttons */
+.btn-support {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-support:hover {
+    opacity: 0.9;
+}
+
+.btn-support i {
+    margin-right: 8px;
+}
+
+/* --- LOWER SECTION (Banner) --- */
+.LowerSection {
+    border-radius: 24px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+}
+
+.BannerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-large {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.LowerSection h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.LowerSection p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn-create {
+    background: white;
+    color: #9333ea;
+    padding: 15px 30px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s;
+}
+
+.btn-create:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Grid for smaller screens */
+@media (max-width: 900px) {
+    .MiddleSection {
+        grid-template-columns: 1fr;
+    }
+    .TopControls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
