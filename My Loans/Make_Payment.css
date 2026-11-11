@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    padding: 40px;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-nav {
+    margin-bottom: 20px;
+}
+
+.back-nav a {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-section {
+    margin-bottom: 30px;
+}
+
+.header-main {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.header-sub {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.payment-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    margin-bottom: 25px;
+}
+
+.card-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.lender-info {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.status-badge {
+    background-color: #dcfce7;
+    color: #16a34a;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.progress-section {
+    margin-bottom: 30px;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.highlight-purple {
+    color: #9333ea;
+}
+
+.progress-bar {
+    height: 24px;
+    background-color: #f1f5f9;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #10b981;
+    border-radius: 12px;
+}
+
+.progress-text {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 11px;
+    color: #475569;
+    font-weight: 600;
+}
+
+.loan-stats-grid {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fcfcfc;
+    border: 1px solid #f1f5f9;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.stat-box {
+    flex: 1;
+}
+
+.stat-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #94a3b8;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-num {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1e293b;
+}
+
+.text-green {
+    color: #16a34a;
+}
+
+.text-purple {
+    color: #9333ea;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.amount-input-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #a855f7;
+    font-weight: 600;
+}
+
+.amount-input {
+    width: 100%;
+    padding: 16px 16px 16px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    outline: none;
+    color: #1e293b;
+}
+
+.input-helper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.link-purple {
+    color: #9333ea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.method-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.method-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.method-card.selected {
+    border: 2px solid #a855f7;
+    background-color: #faf5ff;
+}
+
+.method-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.icon-bkash {
+    background-color: #e2136e;
+}
+
+.icon-nagad {
+    background-color: #f1592a;
+}
+
+.icon-bank {
+    background-color: #2563eb;
+}
+
+.icon-card {
+    background-color: #4f46e5;
+}
+
+.method-info h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.method-info span {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.radio-circle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #e2e8f0;
+}
+
+.radio-circle.selected {
+    border-color: #a855f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-circle.selected .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #a855f7;
+    border-radius: 50%;
+}
+
+.method-footer {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.tag-green {
+    color: #16a34a;
+}
+
+.tag-orange {
+    color: #ea580c;
+}
+
+.tag-gray {
+    color: #64748b;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.gradient-card {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    border-radius: 24px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(168, 85, 247, 0.2);
+}
+
+.grad-header {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.grad-amount {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.grad-date {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.countdown-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.count-label {
+    display: block;
+    font-size: 12px;
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+
+.count-val {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.late-fee-alert {
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.hist-date {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.hist-method {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.hist-right {
+    text-align: right;
+}
+
+.hist-amount {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.badge-complete {
+    font-size: 10px;
+    background-color: #dcfce7;
+    color: #16a34a;
+    padding: 2px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.btn-outline {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    background: white;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #475569;
+    cursor: pointer;
+}
+
+.help-box {
+    background-color: #eff6ff;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid #dbeafe;
+}
+
+.help-icon {
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.help-box p {
+    font-size: 13px;
+    color: #3b82f6;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .payment-layout {
+        grid-template-columns: 1fr;
+    }
+}

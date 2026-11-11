@@ -1,0 +1,253 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f6f8fb;
+    padding: 40px;
+}
+
+.dflex {
+    display: flex;
+}
+
+
+.Top {
+    margin-bottom: 30px;
+}
+
+.Top p strong {
+    font-size: 13px;
+    color: #888;
+}
+
+.Top h5 {
+    font-size: 20px;
+    color: #333;
+}
+
+
+.Middle {
+    gap: 30px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+
+.Mid_Left {
+    flex: 2.5;
+}
+
+
+
+.BalanceCard {
+
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+    transition: all 0.3s ease;
+}
+
+.BalanceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.3);
+}
+
+.BalanceCard h1 {
+    font-size: 50px;
+    margin: 15px 0 30px 0;
+}
+
+
+
+.StatsRow {
+    justify-content: flex-start;
+    gap: 100px;
+    margin-bottom: 35px;
+}
+
+.stat p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.stat h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.ActionBtns {
+    gap: 20px;
+}
+
+.ActionBtns button {
+    padding: 12px 50px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.btn-deposit {
+    background: white;
+    color: #6366f1;
+}
+
+.btn-withdraw {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+
+.Mid_Right {
+    flex: 1;
+}
+
+.DepositForm {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.DepositForm label {
+    font-size: 13px;
+    color: #888;
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.DepositForm input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background: #fcfcfc;
+    margin-bottom: 15px;
+}
+
+
+
+.method-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    background: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.method-btn:hover {
+    border-color: #6366f1;
+    background: #f8faff;
+}
+
+.method-btn.active {
+    border-color: #6366f1;
+    background: #f1f4ff;
+}
+
+
+.btn-confirm {
+    width: 100%;
+    padding: 16px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.lower {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.lower > p {
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.TransItem {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fcfcfc;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    border: 1px solid #f8f8f8;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.TransItem:hover {
+    transform: scale(1.01);
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icon.green {
+    background: #e8f9ef;
+    color: #22c55e;
+}
+
+.amount-status {
+    text-align: right;
+}
+
+.amount-status p.green {
+    color: #22c55e;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.status {
+    font-size: 11px;
+    color: #888;
+}
+
+
+button a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+button a:hover {
+    text-decoration: none;
+    color: inherit;
+}

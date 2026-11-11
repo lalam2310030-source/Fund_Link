@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fcf9f6;
+    padding: 40px;
+}
+
+.dflex {
+    display: flex;
+    gap: 20px;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.SummaryCard {
+    flex: 1;
+    padding: 25px;
+    border-radius: 18px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.SummaryCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.bg-purple {
+    background: #7c3aed;
+}
+
+.bg-orange {
+    background: #f97316;
+}
+
+.bg-green {
+    background: #10b981;
+}
+
+.bg-yellow {
+    background: #f59e0b;
+}
+
+
+
+.LoanDetailSection {
+    background: white;
+    margin-top: 40px;
+    padding: 35px;
+    border-radius: 28px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.3s ease;
+}
+
+.LoanDetailSection:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.h-stat {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    transition: background 0.2s ease;
+}
+
+.h-stat:hover {
+    filter: brightness(0.97);
+}
+
+.bg-blue-soft {
+    background: #f0f4ff;
+}
+
+.bg-pink-soft {
+    background: #fff1f2;
+}
+
+.bg-yellow-soft {
+    background: #fffbeb;
+}
+
+.bg-orange-soft {
+    background: #fff7ed;
+}
+
+.bg-red-soft {
+    background: #fef2f2;
+}
+
+
+
+.ProgressBar {
+    width: 100%;
+    height: 12px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.ProgressFill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+
+
+.btn-purple-main {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 15px;
+    background: #8b5cf6;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-purple-main:hover {
+    background: #7c3aed;
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+}
+
+
+.btn-purple-main a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
